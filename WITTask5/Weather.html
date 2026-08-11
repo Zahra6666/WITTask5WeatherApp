@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <header id="MainContainer">
+      <div class="Search">
+        <input
+          type="text"
+          name="Search"
+          placeholder="Search City"
+          class="SearchBar"
+          id="SearchName"
+          list="countries"
+        />
+        <datalist id="countries">
+          <option value="Iraq"></option>
+          <option value="Tokyo"></option>
+          <option value="Russia"></option>
+          <option value="Italy"></option>
+          <option value="Ushuaia,AR"></option>
+        </datalist>
+        <button id="SearchBTN">
+          <img
+            class="WhiteIcon"
+            src="images/search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+            alt="Search"
+          />
+        </button>
+      </div>
+      <section id="Info" style="display: none">
+        <div class="LocationDateContain">
+          <div class="location">
+            <img
+              class="WhiteIcon"
+              src="images/location_on_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="location"
+            />
+            <h4 id="CityName">Basrah</h4>
+          </div>
+          <h5 id="Date">Mon, Aug 10</h5>
+        </div>
+        <div id="WeatherContain-Summary">
+          <img
+            src="images/clouds.svg"
+            alt="Weather image"
+            id="WeatherContainSummary"
+          />
+          <div class="WeatherInfo">
+            <h1 id="Temperature">36°C</h1>
+            <h3 id="Condition">Clear</h3>
+          </div>
+        </div>
+        <div class="WeatherContain-Extra">
+          <div class="ExtraWeatherInfo">
+            <img
+              class="WhiteIcon"
+              src="images/TemperatureIcon.svg"
+              alt="Temperature Icon"
+            />
+            <h4>Feels like</h4>
+            <h3 id="FeelsLike">35°C</h3>
+          </div>
+          <div class="ExtraWeatherInfo">
+            <img class="WhiteIcon" src="images/WindIcon.svg" alt="Wind Icon" />
+            <h4>Wind</h4>
+            <h3 id="Wind">14.8km/h</h3>
+          </div>
+          <div class="ExtraWeatherInfo">
+            <img
+              class="WhiteIcon"
+              src="images/HumidityIcon.svg"
+              alt="Humidity Icon"
+            />
+            <h4>Humidity</h4>
+            <h3 id="Humidity">26%</h3>
+          </div>
+
+          <div class="ExtraWeatherInfo">
+            <img
+              class="WhiteIcon"
+              src="images/PressureIcon.svg"
+              alt="Pressure Icon"
+            />
+            <h4>Pressure</h4>
+            <h3 id="Pressure">1001hPa</h3>
+          </div>
+        </div>
+      </section>
+      <section id="NoInfo">
+        <img
+          id="WeatherPic"
+          src="images/WeatherMainPic.svg"
+          alt="Weather Picture"
+        />
+        <center>
+          <h2>Search city</h2>
+          <h3>Find out the weather conditions</h3>
+        </center>
+      </section>
+    </header>
+
+    <script src="Script.js"></script>
+  </body>
+</html>
